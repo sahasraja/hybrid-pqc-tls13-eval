@@ -1,0 +1,33 @@
+# Private keys and certificates: never commit
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+*.csr
+
+# QRNG seed material
+seed-*.bin
+*.seed
+
+# Raw, unsanitized captures (commit only files in pcaps/sanitized/)
+*.pcap
+*.pcapng
+!pcaps/sanitized/*.pcap
+!pcaps/sanitized/*.pcapng
+
+# Local env and secrets
+.env
+*.secret
+openssl.local.cnf
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
