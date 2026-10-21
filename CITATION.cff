@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: software
+title: "Drop-In Hybrid Post-Quantum Key Exchange for TLS 1.3 at Zero Trust Boundaries: Architecture, Functional Validation, and an Open Evaluation Agenda"
+abstract: "Reference architecture, reproducible procedure, and functional validation of the hybrid post-quantum TLS 1.3 key exchange group X25519MLKEM768 (X25519 + ML-KEM-768, RFC 10024) with OpenSSL 3.5, with an open evaluation agenda for community measurement."
+authors:
+  - family-names: Sahasranamam
+    given-names: Raj
+    orcid: "https://orcid.org/0009-0001-4855-6601"
+    affiliation: "Nila Professional Services"
+version: "1.0.0"
+date-released: "2026-10-21"
+license: MIT
+repository-code: "https://github.com/sahasraja/hybrid-pqc-tls13-eval"
+keywords:
+  - post-quantum cryptography
+  - ML-KEM
+  - hybrid key exchange
+  - TLS 1.3
+  - X25519MLKEM768
+  - Zero Trust
+  - OpenSSL
