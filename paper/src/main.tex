@@ -34,6 +34,7 @@
 }
 
 \begin{document}
+\bstctlcite{IEEEexample:BSTcontrol}
 
 \title{Drop-In Hybrid Post-Quantum Key Exchange for TLS~1.3 at Zero Trust Boundaries: Architecture, Functional Validation, and an Open Evaluation Agenda}
 
@@ -102,7 +103,7 @@ SecP384r1MLKEM1024 & 0x11ED & 1665 & 1665 & EC, PQ \\
 The hybrid shared secret is the concatenation of both component secrets, which then enters the standard TLS~1.3 key schedule. Bindel et al.~\cite{bindel2019} analyze such combiners and show that the derived key remains secure if at least one component remains secure. This property is the core argument for hybrid deployment during the transition: an unexpected weakness in the young ML-KEM implementation ecosystem is backstopped by X25519, and a future CRQC that breaks X25519 is stopped by ML-KEM.
 
 \subsection{Prior Measurement Work}
-Paquin, Stebila, and Tamvada~\cite{paquin2020} benchmarked post-quantum key exchange and signatures in TLS under emulated network conditions and found that as packet loss rises, schemes with larger handshake messages are disproportionately affected, an effect that loopback testing cannot reveal. Sikeridis, Kampanakis, and Devetsikiotis~\cite{sikeridis2020} studied post-quantum authentication in TLS~1.3 and showed that the choice of signature scheme and the resulting certificate-chain size strongly affect handshake cost when authentication is upgraded. Both lines of work motivate our separation of concerns: key exchange first, authentication later, and measurement as a distinct, community-scale effort.
+Paquin, Stebila, and Tamvada~\cite{paquin2020} benchmarked post-quantum key exchange and signatures in TLS under emulated network conditions and found that packet loss rates above 3 to 5\% significantly affect post-quantum algorithms whose messages fragment across many packets, an effect that loopback testing cannot reveal. Sikeridis, Kampanakis, and Devetsikiotis~\cite{sikeridis2020} studied post-quantum authentication in TLS~1.3 and showed that the choice of post-quantum signature scheme, and how schemes are combined across the certificate chain, strongly affects handshake latency when authentication is upgraded. Both lines of work motivate our separation of concerns: key exchange first, authentication later, and measurement as a distinct, community-scale effort.
 
 \subsection{Zero Trust Boundaries}
 NIST SP~800-207~\cite{sp800207} and the DoD Zero Trust Strategy~\cite{dodzt} treat every connection as untrusted until verified and push encryption to every hop. A consequence is that the number of TLS-terminating boundaries grows sharply: user-to-portal sessions, service-to-service mutual TLS, gateway crossings, and API brokers. Each is a separate harvest-now-decrypt-later exposure, which makes a repeatable, per-boundary upgrade pattern more valuable than a one-time network-wide change.
