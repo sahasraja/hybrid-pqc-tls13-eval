@@ -1,10 +1,12 @@
 # hybrid-pqc-tls13-eval
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23539597.svg)](https://doi.org/10.5281/zenodo.23539597)
+
 Reproducible evaluation of hybrid post-quantum key exchange (X25519MLKEM768) in TLS 1.3 with OpenSSL 3.5: scripts, data, and packet captures.
 
 **Paper:** *Drop-In Hybrid Post-Quantum Key Exchange for TLS 1.3 at Zero Trust Boundaries: Architecture, Functional Validation, and an Open Evaluation Agenda* ([PDF](paper/Hybrid_PQC_TLS13_Zero_Trust_Paper.pdf))
 **Author:** Raj Sahasranamam, Nila Professional Services ([ORCID 0009-0001-4855-6601](https://orcid.org/0009-0001-4855-6601))
-**Archive DOI:** assigned by Zenodo on first release
+**Archive DOI:** [10.5281/zenodo.23539597](https://doi.org/10.5281/zenodo.23539597)
 
 ## What this is
 
@@ -71,7 +73,7 @@ Results are welcome as pull requests or issues. Please include the OpenSSL versi
 
 ## How to cite
 
-Use the **"Cite this repository"** button on GitHub (generated from [`CITATION.cff`](CITATION.cff)), or cite the Zenodo DOI once it is assigned.
+Use the **"Cite this repository"** button on GitHub (generated from [`CITATION.cff`](CITATION.cff)), or cite the Zenodo DOI [10.5281/zenodo.23539597](https://doi.org/10.5281/zenodo.23539597).
 
 ## License
 

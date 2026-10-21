@@ -8,9 +8,10 @@ authors:
     given-names: Raj
     orcid: "https://orcid.org/0009-0001-4855-6601"
     affiliation: "Nila Professional Services"
-version: "1.0.0"
+version: "1.0.1"
 date-released: "2026-10-21"
 license: MIT
+doi: "10.5281/zenodo.23539597"
 repository-code: "https://github.com/sahasraja/hybrid-pqc-tls13-eval"
 keywords:
   - post-quantum cryptography
